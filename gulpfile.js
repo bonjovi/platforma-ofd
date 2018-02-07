@@ -34,5 +34,9 @@ gulp.task('clean', function () {
 
 
 gulp.task('watch', function() {
-    gulp.watch(['app/scss/**/*.scss'], ['clean','blocks','sass']);
+    browserSync.init({
+        server: "./app"
+    });
+
+    gulp.watch('app/scss/blocks/**/*.scss', gulp.series('clean', 'blocks', 'sass'));
 });
