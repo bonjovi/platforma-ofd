@@ -1,0 +1,17 @@
+.formarea {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.5);
+    transition: width 1s;
+    box-sizing: border-box;
+
+    &_opened {
+        width: 80%; 
+        padding: 40px 80px;
+    }
+}
+
