@@ -1,8 +1,15 @@
 .footer {
-    display: flex;
+    display: none;
     justify-content: space-between;
-    padding: 30px 80px;
+    padding: 30px 100px 30px 80px;
     box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.14);
-    margin-left: -80px;
-    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    right: 0;
+    width: inherit;
+    box-sizing: border-box;
+    margin-right: -20px;
+    margin-left: 0;
+    transition: margin 1s;
 }
