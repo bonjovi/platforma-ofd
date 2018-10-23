@@ -5,14 +5,14 @@
 	cursor: pointer;
 	height: 6px;
     margin: 10px;
-    width: 36px;
+    width: 26px;
 	
 	&__choices {
 		transition: background-color $speed ease-out;
 		cursor: pointer;
 		position: relative;
 		display: block;
-		width: 36px;
+		width: 26px;
 		height: 6px;
 		display: flex;
 		background-color: #dfe1e5;

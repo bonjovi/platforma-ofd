@@ -436,7 +436,7 @@ html, body {
   background-color: #aaa; }
 
 .page {
-  background-image: url(/img/bg.png);
+  background-image: url(../img/bg.png);
   background-size: cover;
   background-color: #000000;
   min-height: 100%;
@@ -491,8 +491,12 @@ html, body {
   overflow-y: scroll;
   margin-right: -20px; }
   .formarea_opened {
-    width: 50%;
+    width: -webkit-calc(100% + 20px);
+    width: calc(100% + 20px);
     padding: 40px 80px 80px 80px; }
+    .formarea_opened.formarea_halfed {
+      width: -webkit-calc(50% + 20px);
+      width: calc(50% + 20px); }
 
 .control-group {
   display: -webkit-box;
@@ -592,14 +596,14 @@ html, body {
   cursor: pointer;
   height: 6px;
   margin: 10px;
-  width: 36px; }
+  width: 26px; }
   .toggler__choices {
     -webkit-transition: background-color 200ms ease-out;
     transition: background-color 200ms ease-out;
     cursor: pointer;
     position: relative;
     display: block;
-    width: 36px;
+    width: 26px;
     height: 6px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -833,7 +837,8 @@ html, body {
   margin-right: -20px;
   margin-left: 0;
   -webkit-transition: margin 1s;
-  transition: margin 1s; }
+  transition: margin 1s;
+  z-index: 9999; }
 
 .button {
   height: -webkit-fit-content;

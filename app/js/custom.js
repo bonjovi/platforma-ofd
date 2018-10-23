@@ -1,4 +1,5 @@
 $(function() {
+
     setTimeout(function() {
         $('.formarea').addClass('formarea_opened');
         $('.page').addClass('page_blured');
@@ -21,24 +22,36 @@ $(function() {
 
     findChecked();
 
-    $('.checkbox input').on('change', function() {
+    $('.checkbox input[status=ordinary]').on('change', function() {
+        if(!$(this).is(':checked')) {
+            $(this).parents('.section__postview').find('.checkbox input[status=checkall]').prop('checked', false);
+        }
+        findChecked();
+    });
+
+    $('.checkbox input[status=checkall]').on('change', function() {
+        if($(this).is(':checked')) {
+            $(this).parents('.section__postview').find('.checkbox input[status=ordinary]').prop('checked', true);
+        } else {
+            $(this).parents('.section__postview').find('.checkbox input[status=ordinary]').prop('checked', false);
+        }
         findChecked();
     });
 
     function findChecked() {
         var section = $('.section');
 
-        var titles = [];
-
         $.each(section, function(key, value) {
-            titles = $(value).find('.checkbox input:checked ~ .checkbox__title');
+            var titles;
+            titles = $(value).find('.checkbox input[status=ordinary]:checked ~ .checkbox__title');
+            $(this).find('.section__preview').text('');
+
+            for (var i=0; i < titles.length; i++) {
+                var text = $(this).find('.section__preview').text() + $(titles[i]).text() + '. ';
+                $(this).find('.section__preview').text(text);
+            }
         });
 
-        console.log(titles.length);
-
-        for (var i=0; i < titles.length; i++) {
-            console.log(titles[i]);
-        }
     }
 
     
