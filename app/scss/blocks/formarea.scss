@@ -8,9 +8,14 @@
     box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.5);
     transition: width 1s;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    margin-right: -20px;
 
     &_opened {
-        width: 80%; 
+        width: 50%; 
         padding: 40px 80px;
     }
 }

@@ -1,0 +1,31 @@
+.button {
+    height: fit-content;
+    border-radius: 24px;
+    border: solid 1px #9013fe;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 24px;
+    color: #9013fe;
+    text-decoration: none;
+    padding: 8px 34px;
+    transition: color 1s;
+    transition: background-color 1s;
+
+    &:hover {
+        background-color: #9013fe;
+        color: #fff;
+    }
+
+    &_violet {
+        background-color: #9013fe;
+        color: #fff;
+        transition: color 1s;
+        transition: background-color 1s;
+
+        &:hover {
+            color: #9013fe;
+            background-color: #ffffff;
+        }
+    }
+}

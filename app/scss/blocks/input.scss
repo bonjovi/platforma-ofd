@@ -7,4 +7,14 @@
     font-family: Roboto;
     font-size: 14px;
     color: #c7c7cc;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 1s;
+
+    &:focus {
+        border-color: #9013fe;
+    }
 }

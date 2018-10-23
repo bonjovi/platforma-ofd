@@ -1,0 +1,12 @@
+.control-group {
+    display: flex;
+    align-items: center;
+
+    & img {
+        margin-left: 24px;
+    }
+
+    &_main {
+        margin-bottom: 58px;
+    }
+}

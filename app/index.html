@@ -10,16 +10,142 @@
 </head>
 <body class="body">
 	<div class="page"></div>
-
-	<div class="formarea">
-		<form action="#" class="form">
-			<div class="control-group">
-				<input type="text" class="input">
-				
+		<div class="formarea">
+			<form action="#" class="form">
+				<div class="control-group control-group_main">
+					<input type="text" class="input" placeholder="Название роли">
+					<img src="img/pencil-icon.jpg" alt="">
+				</div><!-- /.control-group -->
+	
+				<h2 class="title">Продажа</h2>
+				<section class="section">
+					<div class="section__header">
+						<h3 class="section__title">Продажа</h3>
+						<div class="toggler">
+							<input class="toggler__toggler-input" id="toggler-1" type="checkbox" hidden="true" checked>
+	
+							<label class="toggler__choices" for="toggler-1">
+								<div class="toggler__knob"></div>
+							</label>
+						</div><!-- /.toggler -->
+					</div><!-- /.section__header -->
+					<div class="section__content">
+						<div class="shevron"></div>
+						<div class="text">Продажа</div>
+						<div class="section__preview text text_grey">
+							Изменение незаданной цены. Изменение скидки на позицию.<br>Изменение скидки на документ. Регистрация по свободной цене.
+						</div>
+						<div class="section__postview section__postview_closed">
+							<div class="checkbox">
+								<label class="checkbox__label">
+									<div class="checkbox__title text">Изменение незаданной цены</div>
+									<input type="checkbox" checked>
+									<div class="checkbox__indicator"></div>
+								</label>
+							</div>
+	
+							<div class="checkbox">
+								<label class="checkbox__label">
+									<div class="checkbox__title text">Изменение скидки на позицию</div>
+									<input type="checkbox">
+									<div class="checkbox__indicator"></div>
+								</label>
+							</div>
+	
+							<div class="checkbox">
+								<label class="checkbox__label">
+									<div class="checkbox__title text">Изменение скидки на документ</div>
+									<input type="checkbox">
+									<div class="checkbox__indicator"></div>
+								</label>
+							</div>
+	
+							<div class="checkbox">
+								<label class="checkbox__label">
+									<div class="checkbox__title text">Регистрация по свободной цене</div>
+									<input type="checkbox">
+									<div class="checkbox__indicator"></div>
+								</label>
+							</div>
+	
+	
+						</div>
+					</div>
+				</section>
+	
+				<h2 class="title">Возврат</h2>
+				<section class="section">
+						<div class="section__header">
+							<h3 class="section__title">Возврат без основания (с чеком)</h3>
+							<div class="toggler">
+								<input class="toggler__toggler-input" id="toggler-2" type="checkbox" hidden="true">
+		
+								<label class="toggler__choices" for="toggler-2">
+									<div class="toggler__knob"></div>
+								</label>
+							</div><!-- /.toggler -->
+						</div><!-- /.section__header -->
+					</section>
+				<section class="section">
+					<div class="section__header">
+						<h3 class="section__title">Возврат без основания (без чека)</h3>
+						<div class="toggler">
+							<input class="toggler__toggler-input" id="toggler-3" type="checkbox" hidden="true">
+	
+							<label class="toggler__choices" for="toggler-3">
+								<div class="toggler__knob"></div>
+							</label>
+						</div><!-- /.toggler -->
+					</div><!-- /.section__header -->
+					<div class="section__content">
+						<div class="shevron"></div>
+						<div class="text">Возврат без основания</div>
+						<div class="section__preview text text_grey">
+							Изменение незаданной цены. Изменение скидки на позицию.<br>Изменение скидки на документ. Регистрация по свободной цене.
+						</div>
+						<div class="section__postview section__postview_closed">
+							<div class="checkbox">
+								<label class="checkbox__label">
+									<div class="checkbox__title text">Изменение незаданной цены</div>
+									<input type="checkbox" checked>
+									<div class="checkbox__indicator"></div>
+								</label>
+							</div>
+	
+							<div class="checkbox">
+								<label class="checkbox__label">
+									<div class="checkbox__title text">Изменение скидки на позицию</div>
+									<input type="checkbox">
+									<div class="checkbox__indicator"></div>
+								</label>
+							</div>
+	
+							<div class="checkbox">
+								<label class="checkbox__label">
+									<div class="checkbox__title text">Изменение скидки на документ</div>
+									<input type="checkbox">
+									<div class="checkbox__indicator"></div>
+								</label>
+							</div>
+	
+							<div class="checkbox">
+								<label class="checkbox__label">
+									<div class="checkbox__title text">Регистрация по свободной цене</div>
+									<input type="checkbox">
+									<div class="checkbox__indicator"></div>
+								</label>
+							</div>
+	
+	
+						</div>
+					</div>
+				</section>
+			</form>
+			<div class="footer">
+				<a href="#" class="button">Отмена</a>
+				<a href="#" class="button button_violet">Сохранить</a>
 			</div>
-		</form>
-	</div>
-
+		</div><!-- /.formarea -->
 	<script src="js/custom.js"></script>
 </body>
 </html>

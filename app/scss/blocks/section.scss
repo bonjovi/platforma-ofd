@@ -1,0 +1,44 @@
+.section {
+
+    &__header {
+        border-top: 1px solid #c7c7cc;
+        border-bottom: 1px solid #c7c7cc;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        justify-content: space-between;
+        margin-top: -1px;
+    }
+
+    &__title {
+        font-family: Roboto;
+        font-size: 18px;
+        color: #400078;
+        font-weight: normal;
+    }
+
+    &__content {
+        padding: 24px;
+        position: relative;
+    }
+
+    &__preview {
+        display: block;
+        margin-top: 10px;
+        transition: display 1s;
+
+        &_closed {
+            display: none;
+        }
+    }
+
+    &__postview {
+        display: block;
+        margin-top: 40px;
+
+        &_closed {
+            display: none;
+        }
+    }
+}

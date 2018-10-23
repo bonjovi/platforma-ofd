@@ -1,0 +1,42 @@
+.shevron {
+    width: 27px;
+    height: 27px;
+    background-color: #400078;
+    border-radius: 50%;
+    position: absolute;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 1s;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 7px;
+        height: 7px;
+        transform: rotate(135deg);
+        border-radius: 2px;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        margin-top: -4px;
+        
+        transition: margin-top 1s;
+
+        -webkit-transition: -webkit-transform 1s;
+        -moz-transition:    -moz-transform 1s;
+        -o-transition:      -o-transform 1s;
+        -ms-transition:     -ms-transform 1s;
+        transition:         transform 1s;
+    }
+
+    &_opened {
+        background-color: #bd10e0;
+
+        &:before {
+            margin-top: 4px;
+            transform: rotate(-45deg);
+        }
+    }
+}
